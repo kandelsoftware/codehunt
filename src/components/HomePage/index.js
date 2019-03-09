@@ -53,9 +53,70 @@ export default class HomePage extends Component {
                   <br />
                   {this.state.productLists[0].upvote}
                 </a>
+                <img
+                  src={this.state.productLists[0].media}
+                  alt=""
+                  className="product-item-media"
+                />
+                <section className="product-item-info">
+                  <a href="" className="">
+                    <h2>{this.state.productLists[0].name}</h2>
+                  </a>
+                  <p>{this.state.productLists[0].description}</p>
+                  <a href="#">
+                    <img
+                      src={this.state.productLists[0].maker.avatar}
+                      alt=""
+                      className="small-avatar"
+                    />
+                  </a>
+                </section>
+                <a
+                  href={this.state.productLists[0].link}
+                  className="product-item-link"
+                >
+                  <span>
+                    <i className=" fa fa-external-link" />
+                  </span>
+                </a>
+              </li>
+
+              <li className="product-item">
+                <a href="upvote" className="upvote-button" alt="upvote">
+                  <span>
+                    <i className="fa fa-sort-asc" />
+                  </span>
+                  <br />
+                  {this.state.productLists[1].upvote}
+                </a>
+                <img
+                  src={this.state.productLists[1].media}
+                  alt=""
+                  className="product-item-media"
+                />
+                <section className="product-item-info">
+                  <a href="" className="">
+                    <h2>{this.state.productLists[1].name}</h2>
+                  </a>
+                  <p>{this.state.productLists[1].description}</p>
+                  <a href="#">
+                    <img
+                      src={this.state.productLists[1].maker.avatar}
+                      alt=""
+                      className="small-avatar"
+                    />
+                  </a>
+                </section>
+                <a
+                  href={this.state.productLists[0].link}
+                  className="product-item-link"
+                >
+                  <span>
+                    <i className=" fa fa-external-link" />
+                  </span>
+                </a>
               </li>
             </ul>
-            <h2>ProductLists</h2>
           </section>
         </section>
       </div>
